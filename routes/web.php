@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ApiController;
 use App\Http\Controllers\DashboardController;
 use Illuminate\Support\Facades\Route;
 
@@ -14,8 +15,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('splash');
-});
+// Route::get('/', DashboardController::class);
+Route::get('/api/get-weather/{place}', [ApiController::class, 'getWeather']);
 
-Route::resource('/dashboard', DashboardController::class);
+Route::get('/{any?}', [DashboardController::class, 'index'])->where('any', '.*');

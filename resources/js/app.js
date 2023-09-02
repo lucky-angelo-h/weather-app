@@ -6,6 +6,7 @@
 
 import './bootstrap';
 import { createApp } from 'vue';
+import { createRouter, createWebHistory } from 'vue-router';
 
 /**
  * Next, we will create a fresh Vue application instance. You may then begin
@@ -15,9 +16,26 @@ import { createApp } from 'vue';
 
 const app = createApp({});
 
-import ExampleComponent from './components/ExampleComponent.vue';
-app.component('example-component', ExampleComponent);
 
+import DashboardComponent from './components/DashboardComponent.vue';
+import PlaceComponent from './components/PlaceComponent.vue';
+import SplashComponent from './components/SplashComponent.vue';
+// app.component('example-component', ExampleComponent);
+// app.component('dashboard-component', DashboardComponent);
+
+
+const routes = [
+  { path: "/", component: SplashComponent },
+  { path: "/app", component: DashboardComponent },
+  { path: "/app/visit/:place", component: PlaceComponent, props: true },
+]
+
+const router = createRouter({
+  history: createWebHistory(),
+  routes,
+})
+
+app.use(router)
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue

@@ -1,5 +1,4 @@
-@include('header')
-<h1>
-    Weather dashboard
-</h1>
-@include('footer')
+@extends('layouts.app')
+@section('content')
+<router-view></router-view>
+@endsection
