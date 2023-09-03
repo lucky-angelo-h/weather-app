@@ -1,7 +1,7 @@
 <template>
-  <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+  <nav class="navbar navbar-expand-md navbar-light shadow-sm">
     <div class="container">
-      <div class="navbar-brand">
+      <div class="navbar-brand text-white">
           Weather app
       </div>
     </div>
@@ -9,8 +9,8 @@
   <main class="py-4">
     <div>
       <div class="container h-100">
-        <div class="">
-          <h1 class="mb-3">Hello traveller!</h1>
+        <div class="text-white">
+          <h1 class="mb-3">Hello traveler!</h1>
           <h4 class="mb-3">Prior to your departure, feel free to look up the weather for the city you plan to visit.</h4>
         </div>
       </div>
@@ -37,7 +37,7 @@
   import { cities } from './../utils/constants';
   export default {
     mounted() {
-        console.log('Component mounted.')
+        
     },
     data () {
       return {

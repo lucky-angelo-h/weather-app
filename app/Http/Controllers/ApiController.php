@@ -13,7 +13,6 @@ class ApiController extends Controller
   private $ctrycd = "JP";
 
   public function getWeather(string $place) {
-      // var_dump($place);
       $place = $this->getPlace($place);
       $forecast = $this->getForecast($place[0]->lat, $place[0]->lon);
       return response()->json($forecast);
@@ -31,7 +30,7 @@ class ApiController extends Controller
   }
 
   public function getForecast(float $lat, float $lon) {
-    $response = Http::get("api.openweathermap.org/data/2.5/forecast", [
+    $response = Http::get("https://api.openweathermap.org/data/2.5/forecast", [
       'lat' => $lat,
       'lon' => $lon,
       'appid' => $this->apiKey,

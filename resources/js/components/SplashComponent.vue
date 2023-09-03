@@ -1,7 +1,10 @@
 <template>
   <main class="py-4">
-    <div class="container flex justify-content-center align-items-center">
+    <div class="container d-flex justify-content-center flex-column align-items-center">
       <h1>Welcome to weather app</h1>
+      <router-link to="/app">
+        Go to Dashborad
+      </router-link>
     </div>
       
   </main>
@@ -12,11 +15,13 @@
 
   export default {
     props: ['place'],
+    setup() {
+      
+    },
     mounted() {
-        console.log('Component mounted.')
-        setTimeout(3000, function() {
-          router.push('/app');
-        })
+        setTimeout(function() {
+            router.push({path: '/app'});
+        }, 3000)
     },
     data () {
       

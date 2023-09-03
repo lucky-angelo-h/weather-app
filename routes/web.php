@@ -1,6 +1,4 @@
 <?php
-
-use App\Http\Controllers\ApiController;
 use App\Http\Controllers\DashboardController;
 use Illuminate\Support\Facades\Route;
 
@@ -15,7 +13,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', DashboardController::class);
-Route::get('/api/get-weather/{place}', [ApiController::class, 'getWeather']);
-
+Route::redirect('/', '/app');
 Route::get('/{any?}', [DashboardController::class, 'index'])->where('any', '.*');
