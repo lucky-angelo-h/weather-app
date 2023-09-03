@@ -18,7 +18,7 @@
     <div class="container">
       <div class="row">
         <div v-for="place in places" :key="place.id" class="col-lg-4 col-md-6 col-sm-12 mb-3">
-          <router-link :to="'/app/visit/'+place.name" class="text-decoration-none card-list">
+          <router-link :to="'/app/weather/'+place.name" class="text-decoration-none card-list">
             <div class="card shadow" :style="{height: '300px', cursor: 'pointer'}">
               <div class="card-body d-flex justify-content-center align-items-center" :style="{backgroundImage: 'url(' + place.img + ')', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', }">
                 <div class="text-white blur-txt">

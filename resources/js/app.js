@@ -27,7 +27,7 @@ import SplashComponent from './components/SplashComponent.vue';
 const routes = [
   { path: "/", component: SplashComponent },
   { path: "/app", component: DashboardComponent },
-  { path: "/app/visit/:place", component: PlaceComponent, props: true },
+  { path: "/app/weather/:place", component: PlaceComponent, props: true },
 ]
 
 const router = createRouter({
