@@ -16,8 +16,8 @@ I decided to use Laravel and Vue.js for the project, because I want to further e
     This application is made in Laravel 10 and hosted with docker, make sure docker is installed.
 </p>
 <ol>
-    <li>Once cloned, setup the dependencies `composer install`</li>
-    <li>to setup npm dependencies `npm install`</li>
-    <li>to setup vue.js assets, run `npm run build`</li>
-    <li>to run the project on docker, run `./vendor/bin/sail up`</li>
+    <li>Once cloned, setup the dependencies        `composer install`</li>
+    <li>to setup npm dependencies        `npm install`</li>
+    <li>to setup vue.js assets, run        `npm run build`</li>
+    <li>to run the project on docker, run        `./vendor/bin/sail up`</li>
 </ol>
