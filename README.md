@@ -9,3 +9,15 @@ The code implementation is superior because it excels in key areas: speed, reada
 <p>
 I decided to use Laravel and Vue.js for the project, because I want to further expand my skills and, in particular, to become proficient in Vue.js, which is recognized as a widely popular and powerful framework in the field of web development. This choice reflects a commitment to staying current and adaptable in the ever-evolving world of web technology.
 </p>
+<h4>
+    Setup
+</h4>
+<p>
+    This application is made in Laravel 10 and hosted with docker, make sure docker is installed.
+</p>
+<ol>
+    <li>Once cloned, setup the dependencies `composer install`</li>
+    <li>to setup npm dependencies `npm install`</li>
+    <li>to setup vue assets run `npm run build`</li>
+    <li>to run the project on docker, run `./vendor/bin/sail up`</li>
+</ol>
