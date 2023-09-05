@@ -22,4 +22,5 @@ I decided to use Laravel and Vue.js for the project, because I want to further e
 * rename `.env.example` to `.env`
 * run `php artisan key:generate`
 * to run the project on docker, run `./vendor/bin/sail up`
+* access `http://localhost` in browser
 
