@@ -19,5 +19,7 @@ I decided to use Laravel and Vue.js for the project, because I want to further e
 * Once cloned, setup the dependencies `composer install`
 * to setup npm dependencies `npm install`
 * to setup vue.js assets, run `npm run build`
+* rename `.env.example` to `.env`
+* run `php artisan key:generate`
 * to run the project on docker, run `./vendor/bin/sail up`
 
